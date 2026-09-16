@@ -1,0 +1,143 @@
+﻿/**
+ * RESPONSIVE BREAKPOINTS & MOBILE OPTIMIZATIONS
+ * Tested for: 320px, 375px, 414px, 768px, 1024px, 1280px, 1440px, 1920px
+ */
+
+@media (max-width: 1024px) {
+  .about-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .about-statement {
+    position: static;
+  }
+
+  .skills-category-row {
+    grid-template-columns: 200px 1fr;
+    gap: var(--space-4);
+  }
+
+  .project-case-study {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+    --space-20: 4rem;
+    --space-16: 3rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: inline-flex;
+  }
+
+  .skills-category-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+    padding: var(--space-4) 0;
+  }
+
+  .experience-header {
+    padding: var(--space-4) var(--space-5);
+  }
+
+  .experience-body {
+    padding: 0 var(--space-5);
+  }
+
+  .experience-card.open .experience-body {
+    padding: var(--space-4) var(--space-5) var(--space-6);
+  }
+
+  .project-case-study {
+    padding: var(--space-6);
+  }
+
+  .education-item-card {
+    padding: var(--space-5) var(--space-6);
+  }
+
+  .modal-container {
+    max-height: 95vh;
+  }
+
+  .modal-header,
+  .modal-body {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .contact-channel-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .channel-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .hero-headline {
+    font-size: 2.15rem;
+  }
+
+  .hero-avatar-frame {
+    width: 136px;
+    height: 136px;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+  }
+
+  .cert-grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-meta-left {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .channel-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .channel-actions .btn,
+  .channel-actions .btn-copy-email {
+    width: 100%;
+    justify-content: center;
+  }
+}

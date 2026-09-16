@@ -1,0 +1,89 @@
+﻿:root {
+  /* Surface & Background Hierarchy - Deep Matte Charcoal/Graphite */
+  --bg-primary: #0C0D0E;
+  --bg-secondary: #121316;
+  --bg-surface: #17181C;
+  --bg-surface-hover: #1C1E23;
+  --bg-elevated: #202228;
+  --bg-card: rgba(23, 24, 28, 0.75);
+  --bg-glass: rgba(16, 17, 20, 0.88);
+
+  /* SIGNATURE RESTRAINED ACCENT: Cool Slate Blue (#5B7C99) */
+  --accent: #5B7C99;
+  --accent-hover: #6D90B0;
+  --accent-glow: rgba(91, 124, 153, 0.15);
+  --accent-border: rgba(91, 124, 153, 0.4);
+  --accent-faint: rgba(91, 124, 153, 0.08);
+
+  /* Neutral Border System */
+  --border-faint: rgba(255, 255, 255, 0.04);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-color: rgba(255, 255, 255, 0.11);
+  --border-light: rgba(255, 255, 255, 0.18);
+  --border-highlight: rgba(255, 255, 255, 0.28);
+
+  /* Typography & Text System */
+  --text-white: #FFFFFF;
+  --text-primary: #EDEDED;
+  --text-secondary: #B4B7BD;
+  --text-muted: #7E828A;
+  --text-dark: #50545C;
+
+  /* Typography Scales */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Layout & Containers */
+  --max-width: 1140px;
+  --header-height: 70px;
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-elevated: 0 20px 50px rgba(0, 0, 0, 0.75);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Z-Index Hierarchy */
+  --z-canvas: 1;
+  --z-content: 10;
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-modal: 210;
+  --z-lightbox: 300;
+  --z-progress: 500;
+}

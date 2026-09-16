@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chitte Manoj Reddy — AI &amp; Data Analytics Professional</title>
+  <meta name="description" content="Portfolio of Chitte Manoj Reddy — AI Agent Development, Generative AI, Data Analytics, Power BI, Automation.">
+  <meta name="author" content="Chitte Manoj Reddy">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chitte Manoj Reddy — AI &amp; Data Analytics">
+  <meta property="og:description" content="Building intelligent solutions through AI, data, and automation.">
+  <meta property="og:image" content="public/assets/manoj-profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/tokens.css">
+  <link rel="stylesheet" href="src/styles/base.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chitte Manoj Reddy",
+    "jobTitle": "AI & Data Analytics Professional",
+    "email": "mailto:manojreddy2525@gmail.com",
+    "telephone": "+917386431962",
+    "sameAs": [
+      "https://www.linkedin.com/in/manoj-reddy-chitte-9aa91134b",
+      "https://github.com/manoj2525-dev"
+    ]
+  }
+  </script>
+
+  <!-- Three.js importmap -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS BAR -->
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<!-- WEBGL CANVAS -->
+<canvas id="webgl-canvas" aria-hidden="true"></canvas>
+
+<!-- PRELOADER -->
+<div id="preloader" role="progressbar" aria-label="Loading portfolio" aria-valuemin="0" aria-valuemax="100">
+  <div class="preloader-name">MANOJ REDDY</div>
+  <div class="preloader-bar-wrap">
+    <div class="preloader-bar" id="preloader-bar"></div>
+  </div>
+  <div class="preloader-pct" id="preloader-pct">0%</div>
+</div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor-dot"  aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- NAVIGATION -->
+<header id="site-nav" role="banner">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Manoj Reddy — Home">
+      MANOJ REDDY<span>.</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <div class="nav-links-wrap">
+        <div class="nav-underline" aria-hidden="true"></div>
+        <a href="#home"           class="nav-link active">Home</a>
+        <a href="#about"          class="nav-link">About</a>
+        <a href="#skills"         class="nav-link">Skills</a>
+        <a href="#experience"     class="nav-link">Experience</a>
+        <a href="#projects"       class="nav-link">Projects</a>
+        <a href="#education"      class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact"        class="nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" type="button"
+              aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+        </svg>
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.7 6.7 0 0 0 21 12.8Z"/>
+        </svg>
+      </button>
+      <a href="public/assets/Chitte_Manoj_Reddy_Resume.pdf"
+         download="Chitte_Manoj_Reddy_Resume.pdf"
+         class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Resume</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+    </div>
+
+    <button class="mobile-toggle" id="mobile-toggle"
+            aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-overlay">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="6"  x2="21" y2="6"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav Overlay -->
+<div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+  <div class="mobile-nav-header">
+    <span class="nav-logo">MANOJ REDDY<span>.</span></span>
+    <button class="mobile-nav-close" id="mobile-close" aria-label="Close navigation menu">CLOSE</button>
+  </div>
+  <nav aria-label="Mobile navigation">
+    <ul class="mobile-nav-links" id="mobile-nav-links">
+      <!-- Hydrated by main.js -->
+    </ul>
+  </nav>
+  <div class="mobile-nav-actions">
+    <a href="public/assets/Chitte_Manoj_Reddy_Resume.pdf"
+       download="Chitte_Manoj_Reddy_Resume.pdf"
+       class="btn btn-ghost" target="_blank" rel="noopener">Download Resume</a>
+    <a href="#contact" class="btn btn-primary">Contact Me</a>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main id="main-content">
+
+  <!-- ─── HERO SECTION ─── -->
+  <section class="hero-section" id="home" aria-labelledby="hero-heading">
+    <div class="container">
+      <div class="hero-editorial-grid">
+        
+        <!-- Left Column: Confident Typography & Narrative -->
+        <div class="hero-copy-col">
+          <div class="hero-eyebrow-pill">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span>AI &amp; Data Analytics Professional</span>
+          </div>
+
+          <h1 class="hero-name" id="hero-heading">
+            HI, I'M<br>MANOJ REDDY.
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="hero-role">AI Agents &bull; Generative AI &bull; Analytics &bull; Automation</span>
+            <!-- Hand-drawn SVG Accent Curve / Underline -->
+            <svg class="hero-hand-accent" viewBox="0 0 180 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 13.5C45.5 4.5 125 3.5 178 11.5" />
+            </svg>
+          </div>
+
+          <p class="hero-pitch">
+            Building intelligent enterprise solutions through AI agents, data pipelines, and workflow automation. Turning complex data into scalable action.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="public/assets/Chitte_Manoj_Reddy_Resume.pdf"
+               download="Chitte_Manoj_Reddy_Resume.pdf"
+               class="btn btn-ghost" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+
+          <div class="hero-social-row" aria-label="Professional profiles">
+            <a href="https://www.linkedin.com/in/manoj-reddy-chitte-9aa91134b"
+               target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://github.com/manoj2525-dev"
+               target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manojreddy2525@gmail.com"
+               target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="Email directly via Gmail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Large Photographic Cover Crop (Video / Media Ready) -->
+        <div class="hero-visual-frame">
+          <div class="hero-accent-backdrop" aria-hidden="true"></div>
+          <div class="hero-visual-container">
+            <!-- Video-ready container: accepts either <img> or autoplaying <video> -->
+            <img src="public/assets/manoj-profile.jpg"
+                 alt="Chitte Manoj Reddy — Headshot"
+                 class="hero-media-cover"
+                 id="hero-media-element"
+                 loading="eager" width="460" height="575">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scrolling Tech Stack Marquee -->
+    <div class="hero-marquee-wrap" aria-hidden="true">
+      <div class="hero-marquee">
+        <!-- Hydrated by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT SECTION ─── -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="section-watermark-wrap" aria-hidden="true">
+      <div class="section-watermark watermark-right">ABOUT</div>
+    </div>
+    <div class="container">
+      <div class="section-header-block">
+        <p class="section-eyebrow">01 &bull; Identity &amp; Impact</p>
+        <h2 class="section-title" id="about-heading">The person behind the pipeline.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="about-statement" id="about-statement">
+            I work at the intersection of <em>AI agents</em>, <em>data</em>, and <em>intelligent automation</em>.
+          </div>
+          <div class="about-stats" id="about-stats">
+            <!-- Hydrated by main.js -->
+          </div>
+        </div>
+        <div class="about-right" id="about-bio">
+          <!-- Hydrated by main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS SECTION ─── -->
+  <section class="section" id="skills" aria-labelledby="skills-heading">
+    <div class="section-watermark-wrap" aria-hidden="true">
+      <div class="section-watermark watermark-left">SKILLS</div>
+    </div>
+    <div class="container">
+      <div class="section-header-block">
+        <p class="section-eyebrow">02 &bull; Technical Matrix</p>
+        <h2 class="section-title" id="skills-heading">Engineering &amp; Analytics Stack.</h2>
+        <p class="section-lead">Curated toolset across Machine Learning, Big Data pipelines, cloud databases, and automation frameworks.</p>
+      </div>
+
+      <div class="skills-grid" id="skills-grid" aria-label="Technical skills by category">
+        <!-- Hydrated by main.js with icons -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE SECTION ─── -->
+  <section class="section" id="experience" aria-labelledby="exp-heading">
+    <div class="section-watermark-wrap" aria-hidden="true">
+      <div class="section-watermark watermark-right">EXPERIENCE</div>
+    </div>
+    <div class="container">
+      <div class="section-header-block">
+        <p class="section-eyebrow">03 &bull; Professional History</p>
+        <h2 class="section-title" id="exp-heading">Where I've built &amp; automated.</h2>
+      </div>
+
+      <div class="exp-company-header">
+        <div>
+          <div class="exp-company-name">Lumen Technologies</div>
+          <div style="color: var(--muted); font-size: var(--t-sm); margin-top: 4px;">Enterprise AI &amp; Data Automation Initiatives</div>
+        </div>
+        <div class="exp-company-meta">
+          <span>AI &amp; Data Analytics</span><br>
+          <span style="color: var(--muted);">Bangalore, India</span>
+        </div>
+      </div>
+
+      <div class="exp-timeline" id="exp-list" aria-label="Work experience accordion list">
+        <!-- Hydrated by main.js (no dates) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS SECTION ─── -->
+  <section class="section" id="projects" aria-labelledby="projects-heading">
+    <div class="section-watermark-wrap" aria-hidden="true">
+      <div class="section-watermark watermark-left">PROJECTS</div>
+    </div>
+    <div class="container">
+      <div class="section-header-block">
+        <p class="section-eyebrow">04 &bull; Selected Work</p>
+        <h2 class="section-title" id="projects-heading">Featured case studies.</h2>
+        <p class="section-lead">Applied machine learning and full-stack software systems engineered for business operations and agricultural intelligence.</p>
+      </div>
+
+      <div class="projects-list" id="projects-list">
+        <!-- Hydrated by main.js (direction B: graphic panels) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION SECTION ─── -->
+  <section class="section" id="education" aria-labelledby="edu-heading">
+    <div class="section-watermark-wrap" aria-hidden="true">
+      <div class="section-watermark watermark-right">EDUCATION</div>
+    </div>
+    <div class="container">
+      <div class="section-header-block">
+        <p class="section-eyebrow">05 &bull; Academic Foundation</p>
+        <h2 class="section-title" id="edu-heading">Education &amp; Qualifications.</h2>
+      </div>
+
+      <div class="edu-list" id="edu-list">
+        <!-- Hydrated by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS SECTION ─── -->
+  <section class="section" id="certifications" aria-labelledby="certs-heading">
+    <div class="section-watermark-wrap" aria-hidden="true">
+      <div class="section-watermark watermark-left">CREDENTIALS</div>
+    </div>
+    <div class="container">
+      <div class="section-header-block">
+        <p class="section-eyebrow">06 &bull; Industry Accreditations</p>
+        <h2 class="section-title" id="certs-heading">Verified Credentials &amp; Certifications.</h2>
+        <p class="section-lead">Tap a card to inspect the verified credential.</p>
+      </div>
+
+      <div class="carousel-wrap"
+           role="region"
+           aria-roledescription="carousel"
+           aria-label="Certifications carousel"
+           aria-live="polite">
+        <div class="carousel-track-wrap">
+          <div class="carousel-track" id="cert-track">
+            <!-- Hydrated by main.js -->
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Previous certification">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </button>
+          <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Certification slides">
+            <!-- Hydrated by main.js -->
+          </div>
+          <button class="carousel-btn" id="carousel-next" aria-label="Next certification">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT SECTION ─── -->
+  <section class="section contact-section-container" id="contact" aria-labelledby="contact-heading">
+    <div class="section-watermark-wrap" aria-hidden="true">
+      <div class="section-watermark watermark-center watermark-faint-solid">LET'S CONNECT</div>
+    </div>
+    <div class="container">
+      <div class="section-header-block">
+        <p class="section-eyebrow">07 &bull; Inquiries &amp; Collaboration</p>
+        <h2 class="section-title" id="contact-heading">Let's build intelligent solutions.</h2>
+        <p class="section-lead">Have an AI project, analytics requirement, or career opportunity? Send a direct message or connect through channels.</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Channels List -->
+        <div class="contact-channels-list" aria-label="Direct contact channels">
+          
+          <!-- Standalone Gmail Shortcut Card -->
+          <div class="contact-channel-row">
+            <div class="contact-channel-info">
+              <div class="contact-channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="contact-channel-meta">
+                <span class="contact-channel-label">Email Direct</span>
+                <span class="contact-channel-val">manojreddy2525@gmail.com</span>
+              </div>
+            </div>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manojreddy2525@gmail.com"
+               target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"
+               id="direct-email-card-btn" aria-label="Compose direct message to manojreddy2525@gmail.com via Gmail">
+              Compose &rarr;
+            </a>
+          </div>
+
+          <div class="contact-channel-row">
+            <div class="contact-channel-info">
+              <div class="contact-channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
+              <div class="contact-channel-meta">
+                <span class="contact-channel-label">LinkedIn</span>
+                <span class="contact-channel-val">manoj-reddy-chitte</span>
+              </div>
+            </div>
+            <a href="https://www.linkedin.com/in/manoj-reddy-chitte-9aa91134b"
+               target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Connect &rarr;</a>
+          </div>
+
+          <div class="contact-channel-row">
+            <div class="contact-channel-info">
+              <div class="contact-channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </div>
+              <div class="contact-channel-meta">
+                <span class="contact-channel-label">GitHub</span>
+                <span class="contact-channel-val">manoj2525-dev</span>
+              </div>
+            </div>
+            <a href="https://github.com/manoj2525-dev"
+               target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">View &rarr;</a>
+          </div>
+
+          <div class="contact-channel-row">
+            <div class="contact-channel-info">
+              <div class="contact-channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                </svg>
+              </div>
+              <div class="contact-channel-meta">
+                <span class="contact-channel-label">Curriculum Vitae</span>
+                <span class="contact-channel-val">Chitte_Manoj_Reddy_Resume.pdf</span>
+              </div>
+            </div>
+            <a href="public/assets/Chitte_Manoj_Reddy_Resume.pdf"
+               download="Chitte_Manoj_Reddy_Resume.pdf" target="_blank"
+               class="btn btn-primary btn-sm">Download</a>
+          </div>
+        </div>
+
+        <!-- Floating Contact Form Card -->
+        <div class="contact-floating-card">
+          <div class="contact-form-header">
+            <h3 class="contact-form-title">Send a message</h3>
+            <p class="contact-form-subtitle">Pre-fills Gmail compose so you can review and click send directly.</p>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="form-name">Name <span style="color:var(--accent);">*</span></label>
+              <input class="form-input" type="text" id="form-name" name="name" placeholder="Your name" required autocomplete="name">
+              <span class="form-error" role="alert" id="name-error">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-email">Email <span style="color:var(--accent);">*</span></label>
+              <input class="form-input" type="email" id="form-email" name="email" placeholder="your.email@example.com" required autocomplete="email">
+              <span class="form-error" role="alert" id="email-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-subject">Subject (Optional)</label>
+              <input class="form-input" type="text" id="form-subject" name="subject" placeholder="Portfolio inquiry or opportunity">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-message">Message <span style="color:var(--accent);">*</span></label>
+              <textarea class="form-textarea" id="form-message" name="message" placeholder="Describe your requirement, project, or role..." required></textarea>
+              <span class="form-error" role="alert" id="msg-error">Please enter a message.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit-btn">
+              <div class="form-submit-spinner" aria-hidden="true"></div>
+              <span class="btn-text">SEND VIA GMAIL &rarr;</span>
+            </button>
+          </form>
+
+          <!-- Honest Inline Feedback Notice -->
+          <div id="form-feedback-notice" class="form-feedback-notice" role="status" aria-live="polite">
+            <div id="form-feedback-text">Opened in Gmail — click Send there to finish.</div>
+            <div id="form-fallback-area" style="margin-top:6px;"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">CHITTE MANOJ REDDY<span>.</span></div>
+      <p class="footer-copy">&copy; 2026 Chitte Manoj Reddy &bull; AI &amp; Data Analytics Professional.</p>
+      <div class="hero-social-row" aria-label="Footer social links">
+        <a href="https://www.linkedin.com/in/manoj-reddy-chitte-9aa91134b" target="_blank" rel="noopener" class="hero-social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/manoj2525-dev" target="_blank" rel="noopener" class="hero-social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manojreddy2525@gmail.com" target="_blank" rel="noopener" class="hero-social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- CERTIFICATE LIGHTBOX MODAL -->
+<div id="lightbox-overlay" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Certificate document viewer">
+  <div class="lightbox-box">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close certificate modal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+      Close
+    </button>
+    <img id="lightbox-img" src="" alt="" loading="lazy">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+</div>
+
+<!-- VOICE INTRO WIDGET -->
+<button id="voice-widget"
+        aria-pressed="false"
+        aria-label="Play voice intro"
+        title="Play / Stop voice intro">
+  <span class="voice-icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+      <line x1="12" y1="19" x2="12" y2="23"/>
+      <line x1="8" y1="23" x2="16" y2="23"/>
+    </svg>
+  </span>
+  <span class="voice-label">Voice Intro</span>
+  <div class="voice-eq" aria-hidden="true">
+    <div class="eq-bar"></div>
+    <div class="eq-bar"></div>
+    <div class="eq-bar"></div>
+    <div class="eq-bar"></div>
+  </div>
+</button>
+
+<!-- SCRIPTS -->
+<script src="src/data.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script type="module" src="src/main.js"></script>
+
+</body>
+</html>

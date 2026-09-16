@@ -1,0 +1,153 @@
+/* ============================================================
+   DESIGN TOKENS — BOLD EDITORIAL PORTFOLIO (Chitte Manoj Reddy)
+  Muted Teal (#0F766E) on Soft Warm White (#FAFAF9)
+   ============================================================ */
+:root {
+  /* Backgrounds */
+  --bg:          #FAFAF9;
+  --home-bg:     #EDEBE7;
+  --surface:     #FFFFFF;
+  --surface-2:   #F0FDFA;
+  --surface-3:   #E7E5E4;
+  --dark-section: #1C1917;
+  --surface-trans: rgba(255, 255, 255, 0.86);
+
+  /* Borders & Highlights */
+  --line:        #E7E5E4;
+  --line-light:  #D6D3D1;
+  --line-accent: rgba(15, 118, 110, 0.35);
+  --line-top:    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+  /* Typography Colors */
+  --text:        #1C1917;
+  --text-pure:   #1C1917;
+  --muted:       #78716C;
+  --muted-2:     #78716C;
+  --name-edge:   #D6D3D1;
+  --watermark-stroke: rgba(120, 113, 108, 0.24);
+  --watermark-fill: rgba(120, 113, 108, 0.07);
+
+  /* Signature Accent: Muted Teal */
+  --accent:       #0F766E;
+  --accent-hover: #115E59;
+  --accent-dim:   #F0FDFA;
+  --accent-glow:  rgba(15, 118, 110, 0.24);
+  --accent-ring:  rgba(15, 118, 110, 0.50);
+  --cursor-hover: #10B981;
+
+  /* Secondary Semantic Accents */
+  --amber:       #F59E0B;
+  --amber-dim:   rgba(245, 158, 11, 0.14);
+  --green:       #10B981;
+  --green-dim:   rgba(16, 185, 129, 0.14);
+  --cyan:        #06B6D4;
+  --cyan-dim:    rgba(6, 182, 212, 0.14);
+
+  /* Typography */
+  --font-display: 'Syne', 'Inter', -apple-system, system-ui, sans-serif;
+  --font-body:    'Inter', -apple-system, system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Type scale */
+  --t-xs:   0.72rem;
+  --t-sm:   0.875rem;
+  --t-base: 1rem;
+  --t-lg:   1.125rem;
+  --t-xl:   1.375rem;
+  --t-2xl:  1.75rem;
+  --t-3xl:  2.25rem;
+  --t-4xl:  3rem;
+  --t-5xl:  4rem;
+  --t-hero: clamp(2.85rem, 5.5vw, 5rem);
+  --t-watermark: clamp(3.75rem, 11vw, 9.5rem);
+
+  /* Spacing */
+  --sp-1:  0.25rem;
+  --sp-2:  0.5rem;
+  --sp-3:  0.75rem;
+  --sp-4:  1rem;
+  --sp-5:  1.25rem;
+  --sp-6:  1.5rem;
+  --sp-8:  2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+  --sp-32: 8rem;
+
+  /* Layout */
+  --max-w:   1180px;
+  --nav-h:   68px;
+  --gutter:  clamp(1.25rem, 4.5vw, 3.5rem);
+
+  /* Radii */
+  --r-xs:  3px;
+  --r-sm:  6px;
+  --r-md:  10px;
+  --r-lg:  16px;
+  --r-xl:  24px;
+  --r-pill: 9999px;
+
+  /* Shadows */
+  --sh-card:  0 8px 30px rgba(28, 25, 23, 0.10), var(--line-top);
+  --sh-lift:  0 16px 48px rgba(28, 25, 23, 0.16), var(--line-top);
+  --sh-modal: 0 32px 80px rgba(28, 25, 23, 0.24);
+  --sh-accent: 0 10px 30px rgba(15, 118, 110, 0.25);
+
+  /* Motion */
+  --ease:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --t-fast:   150ms;
+  --t-normal: 280ms;
+  --t-slow:   480ms;
+
+  /* Z-index Hierarchy */
+  --z-canvas:    0;
+  --z-watermark: 1;
+  --z-content:   10;
+  --z-nav:       100;
+  --z-voice:     150;
+  --z-modal:     200;
+  --z-lightbox:  300;
+  --z-cursor:    9000;
+  --z-preloader: 9999;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 0ms;
+    --t-normal: 0ms;
+    --t-slow: 0ms;
+  }
+}
+
+[data-theme="dark"] {
+  --bg: #1C1917;
+  --home-bg: #292524;
+  --surface: #292524;
+  --surface-2: #44403C;
+  --surface-3: #57534E;
+  --surface-trans: rgba(41, 37, 36, 0.88);
+  --line: #57534E;
+  --line-light: #78716C;
+  --line-accent: rgba(45, 212, 191, 0.42);
+  --line-top: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --text: #F5F5F4;
+  --text-pure: #FFFFFF;
+  --muted: #A8A29E;
+  --muted-2: #D6D3D1;
+  --name-edge: #57534E;
+  --watermark-stroke: rgba(255, 255, 255, 0.045);
+  --watermark-fill: rgba(255, 255, 255, 0.02);
+  --accent: #2DD4BF;
+  --accent-hover: #5EEAD4;
+  --accent-dim: rgba(45, 212, 191, 0.16);
+  --accent-glow: rgba(45, 212, 191, 0.3);
+  --accent-ring: rgba(45, 212, 191, 0.58);
+  --cursor-hover: #10B981;
+  --sh-card: 0 8px 30px rgba(0, 0, 0, 0.28), var(--line-top);
+  --sh-lift: 0 16px 48px rgba(0, 0, 0, 0.42), var(--line-top);
+  --sh-modal: 0 32px 80px rgba(0, 0, 0, 0.7);
+  --sh-accent: 0 10px 30px rgba(45, 212, 191, 0.24);
+}

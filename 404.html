@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | Chitte Manoj Reddy</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    .not-found-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-8);
+      background: radial-gradient(circle at 50% 40%, rgba(35, 35, 35, 0.4) 0%, #0F0F0F 80%);
+    }
+    .not-found-code {
+      font-size: clamp(4rem, 12vw, 8rem);
+      font-weight: 800;
+      font-family: var(--font-mono);
+      color: var(--border-light);
+      line-height: 1;
+      margin-bottom: var(--space-2);
+    }
+    .not-found-title {
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: var(--space-4);
+      letter-spacing: -0.02em;
+    }
+    .not-found-desc {
+      font-size: var(--text-base);
+      color: var(--text-secondary);
+      max-width: 440px;
+      margin-bottom: var(--space-8);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="not-found-container">
+    <div class="not-found-code">404</div>
+    <h1 class="not-found-title">PAGE NOT FOUND</h1>
+    <p class="not-found-desc">
+      The requested case study or page could not be located. It may have been moved, renamed, or is currently being refined.
+    </p>
+    <a href="index.html" class="btn btn-primary btn-lg">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      BACK TO HOME
+    </a>
+  </div>
+</body>
+</html>
