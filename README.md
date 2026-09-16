@@ -57,7 +57,7 @@ From the project folder:
 powershell.exe -ExecutionPolicy Bypass -File .\server.ps1
 ```
 
-Open http://localhost:8080/ in a modern browser.
+Open (https://manoj2525-dev.github.io/Manoj-Reddy-Chitte-Portfolio/) in a modern browser.
 
 The execution-policy flag applies only to that PowerShell process. It does not change the machine policy.
 
