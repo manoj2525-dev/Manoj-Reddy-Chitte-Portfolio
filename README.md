@@ -32,7 +32,6 @@ manoj-reddy-portfolio/
 ├── index.html                 # Main page, metadata, import map, and markup
 ├── 404.html                   # Static hosting fallback page
 ├── server.ps1                 # PowerShell static server on port 8080
-├── vercel.json                # Vercel SPA/static hosting configuration
 ├── robots.txt                 # Crawler instructions
 ├── sitemap.xml                # Sitemap for search engines
 ├── public/assets/             # Profile photo, certificates, and resume
@@ -99,7 +98,16 @@ The theme toggle stores `light` or `dark` in `localStorage` under `portfolio-the
 
 ## Deployment
 
-This is a static site and can be deployed directly to Vercel, Netlify, GitHub Pages, or any static hosting provider. Upload the project root and configure the provider to serve `index.html` as the entry page and `404.html` as the fallback.
+This is a static site and can be deployed directly to Vercel, Netlify, GitHub Pages, or any static hosting provider. The project intentionally has no `package.json`, Vite config, or `vercel.json` because it does not need a build step.
+
+For Vercel, set:
+
+- Framework Preset: `Other`
+- Build Command: leave empty, or set it to `None`
+- Output Directory: `.` (the project root)
+- Install Command: leave empty, or set it to `None`
+
+If Vercel still runs `vite build`, open the project Settings and clear the saved Build Command. That setting is external to this repository and causes `vite: command not found`.
 
 No secrets or server-side environment variables are required.
 
